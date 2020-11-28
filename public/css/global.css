@@ -1,0 +1,123 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+ img {
+     width : 202.75px;
+     height: 82.45px;
+ }
+
+ .mr-4P5 {
+    margin-right: 26px;
+ }
+
+ .ml-4P5 {
+    margin-left: 26px;
+ }
+
+ .search-bar {
+     width: 100% !important;
+     background-color: #F0F0F1;
+     border-width: 0px;
+     height: 49px;
+     font-size: 10px;
+     padding-right: 40px;
+ }
+
+ .search-bar::placeholder {
+     color: #A9A6A8;
+     font-size: 10px;
+     font-family: IRANYekan;
+ }
+
+ .search-container {
+     width: 60%;
+ }
+
+ input::placeholder {
+    color : red;
+ }
+
+ /* icons */
+
+
+ .icon {
+     width: 22.81px;
+     height: 25.67px;
+ }
+
+ .icon-play{
+    background-image : url(../images/user.svg);
+    background-size: cover;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+ }
+
+ .icon-search {
+    background-image : url(../images/search.svg);
+    background-size: cover;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin-right: 10px;
+ }
+
+  .iconic-button {
+      width: 163px;
+      height: 42px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 15px;
+      border-color : rgba( 112, 112, 112, .3);
+  }
+
+  .blue-icon {
+      width: 10.5px;
+      height: 14px;
+  }
+
+  /* colors */
+
+  .grey {
+      color : #707070
+  }
+
+  /* fonts */
+  h3 {
+    font-family: 'IRANYekan';
+    font-size: 1.2rem;   
+    color: #015699 !important;
+    text-align: right;
+  }
+
+.f12 {
+    font-family: 'IRANYekan';
+    font-size: 12px;   
+    color: black;
+}
+h5 {
+    font-family: 'IRANYekan';
+    font-size: 1rem;   
+    color: black;
+    text-align: right;
+}
+.f14 {
+    font-family: 'IRANYekan';
+    font-size: 14px;   
+    color: black;
+}
+
+h6 {
+    font-family: 'IRANYekan';
+    font-size: .875rem;   
+    color: black;
+    text-align: right;
+}
+
+
+  /* buttons */
+

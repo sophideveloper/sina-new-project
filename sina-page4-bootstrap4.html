@@ -1,0 +1,506 @@
+<!doctype html>
+<html dir="rtl" lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Sticky Footer Navbar Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+<link href="./public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <style>
+      .bg-ghost-white{
+        background-color: whitesmoke  ;
+      }
+
+
+      .table {
+      border-bottom:0px !important;
+      font-family: 'IranianSansRegular';
+      text-align: center
+      }
+      .table th, .table td {
+      border: 1px !important;
+      text-align: center;
+
+
+      }
+
+      .table th{
+      color:blue;
+      font-weight:bold;
+      font-size:20px;
+      }
+      .fixed-table-container {
+      border:0px !important;
+      }
+      .scroll-box{
+        width:350px;
+        height:250px;
+        border-bottom :1px solid #DCDCDC;border-top:1px solid #DCDCDC;
+        overflow:scroll;
+        overflow-x: hidden;
+        border-radius:5px
+      }
+      .dropdown-menu{
+        width:350px!important;
+        height:400px!important;
+        border-radius:5px
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./public/css/global.css" rel="stylesheet">
+    <link href="./public/css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <img src="./public/images/logo.png" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="d-flex  navbar-nav search-container">
+            <form class="form-inline mt-2 mt-md-0  w-100 ">
+              <input class="form-control search-bar" type="text" placeholder="کالای مورد نظر خود را جستجو کنید" aria-label="Search">
+                <i class="icon-search icon"></i>
+              </input>
+            </form>
+          </ul>
+
+          <ul class="d-flex  navbar-nav mr-auto">
+            <li class="nav-item mt-4 mt-md-0">
+              <button class="btn btn-outline-secondary pull-right toggle iconic-button ml-4P5">
+                <i class="icon-play icon"></i>
+                <div class="f12">ورود به حساب کاربری</div>
+              </button>
+            </li>
+            <li class="nav-item mt-4 mt-md-0 d-flex align-items-center">
+              <div class="dropdown">
+            <a type="button" data-toggle="dropdown" >
+              <img src="./public/images/shopping.svg" class="icon" />
+          </a>
+            <ul class="dropdown-menu text-right">
+                <li class="d-flex justify-content-between p-2"><a href="#">
+                   مشاهده سبد خرید
+                   <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <h6 class="text-muted">
+                  3 کالا
+                </h6>
+              </li>
+              <li>
+                <div class="scroll-box">
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+                <li class="p-4">
+                  <div class="d-flex justify-content-between">
+                    <div style="font-size:12px;opacity:0.5"> 
+                       مبلغ قالا پرداخت:
+                       <br/>
+                       ۱۲۳۴۵تومان
+                    </div>
+                    <div> 
+                        <button class="btn btn-primary btn-sm">
+                          ثبت سفارش
+                        </button>
+                    </div>
+                  </div>  
+                </li>
+            </ul>
+          </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+ <div class="container-fluid w3-light-grey"  >
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-5">
+      <div class="container-fluid" >
+        <div class="row">
+          <div class=" col-sm-12">
+            <div style="margin-top: 10%">
+              <h4 class="pt-5 p-2 text-right text-info">
+                <strong>
+                آدرس تحویل سفارش را انتخاب نمایید:  
+                </strong>
+              </h4>
+            </div>
+            <div class="h-auto text-right bg-light p-3 rounded">
+                <h5>
+
+                <i class="fa fa-dot-circle-o fa-lg"></i>
+                  <!-- <strong> -->
+                <span class="p-2"> 
+                به این آدرس ارسال شود:
+
+                </span >                  
+                  <!-- </strong> -->
+                </h5>
+              <div class="m-4 pr-2" >
+                <h6 >تهران - سعادت آباد- خیابان فتحی - پلاک ۵۴۳۲ </h6>
+                  <h6 class="pt-3">
+                    <i class="fa fa-envelope-o fa-lg"></i>
+                  <span class="p-2">
+                    656565656
+                  </span>
+                  </h6>
+                <h6 class="pt-2">
+                  <i class="fa fa-phone fa-lg"></i>
+                  <span class="p-2">
+                    656565656         
+                  </span>
+                  </h6>
+                <h6 class="pt-2">
+                  <i class="fa fa-user-o fa-lg"></i>
+                  <span class=" pr-2">
+                    محمد عمرانی
+                    </span>
+                  <span style="float:left">
+                    <button class="btn btn-default text-danger">
+                    <i class="fa fa-trash">
+                        حذف                   
+                    </i>
+                  </button>
+                  <button class="btn btn-default text-info">
+                    <i class="fa fa-edit"> ویرایش </i>
+                  </button>
+                  </span>
+                  </h6>
+                </div>       
+              </div>
+              <br/>
+              <div class="h-auto text-right bg-light p-2 rounded">
+                  <h5>
+
+                  <i class="fa fa-dot-circle-o fa-lg"></i>
+                    <!-- <strong> -->
+                  <span class="p-2"> 
+                  به این آدرس ارسال شود:
+
+                  </span >                  
+                    <!-- </strong> -->
+                  </h5>
+                <div class="m-4 pr-2" >
+                  <h6 >تهران - سعادت آباد- خیابان فتحی - پلاک ۵۴۳۲ </h6>
+                    <h6 class="pt-3">
+                      <i class="fa fa-envelope-o fa-lg"></i>
+                    <span class="p-2">
+                      656565656
+                    </span>
+                    </h6>
+                  <h6 class="pt-2">
+                    <i class="fa fa-phone fa-lg"></i>
+                    <span class="p-2">
+                      656565656         
+                    </span>
+                    </h6>
+                  <h6 class="pt-2">
+                    <i class="fa fa-user-o fa-lg"></i>
+                    <span class=" pr-2">
+                      محمد عمرانی
+                      </span>
+                    <span style="float:left">
+                      <button class="btn btn-default text-danger">
+                      <i class="fa fa-trash">
+                          حذف                   
+                      </i>
+                    </button>
+                    <button class="btn btn-default text-info">
+                      <i class="fa fa-edit"> ویرایش </i>
+                    </button>
+                    </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div style="margin-top: 10%">
+            <h4 class="pt-5 p-2 text-right text-info">
+              <strong>
+              آدرس تحویل سفارش را انتخاب نمایید:  
+              </strong>
+            </h4>
+          </div>
+          <div class="h-auto text-right bg-light p-3 rounded mb-4">
+            <form class="form" action="/action_page.php">
+              <div class="container">
+              <div class="row">
+                <div class="pr-4 pb-2">
+                  <strong>
+                مشخصات گیرنده:
+                    
+                  </strong>
+              </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-4">
+                <input type="text" class="form-control border-0 bg-ghost-white" id="name" placeholder="  نام:" name="name">
+              </div>
+              <div class="form-group col-sm-4">
+                <input type="text" class="form-control border-0 bg-ghost-white" id="name" placeholder="نام خانوادگی:" name="family">
+              </div>
+              <div class="form-group col-sm-4 ">
+                <input type="" class="form-control border-0 bg-ghost-white" id="number" placeholder="شماره موبایل:" name="family">
+              </div>
+              </div>
+              <hr />
+               <div class="row">
+                 <div class="pr-4 pb-2">
+                  <strong>
+                    جزییات آدرس:
+                    
+                  </strong>
+                </div>
+               </div>
+              <div class="row">
+              <div class="form-group col-sm-4">
+                <input type="" class="form-control border-0 bg-ghost-white" id="name" placeholder="استان:" name="family">
+              </div>
+              <div class="form-group col-sm-4">
+                <input type="text" class="form-control border-0 bg-ghost-white" id="name" placeholder="شهر:" name="family">
+              </div>
+                <div class="form-group col-sm-4">
+              </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-12">
+                <textarea class="form-control border-0 bg-ghost-white" rows="3" id="comment" placeholder=":آدرس پستی" ></textarea>
+              </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-4">
+                <input type="text" class="form-control border-0 bg-ghost-white" id="number" placeholder=":کد پستی" name="name">
+              </div>
+              <div class="form-group col-sm-4">
+                <input type="text" class="form-control border-0 bg-ghost-white" id="number" placeholder=":واحد" name="family">
+              </div>
+              <div class="form-group col-sm-4">
+                <input type="" class="form-control border-0 bg-ghost-white" id="number" placeholder=":پلاک" name="family" >
+              </div>
+              </div>
+              <hr/>
+
+              <div class="row">
+                <div class="col-sm-12 text-left" >
+                <button type="submit" class="btn btn-primary">تایید و ثبت آدرس</button>      
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row" >
+          <div class="d-flex flex-row justify-content-around col-md-8 ">
+
+            <ul>
+              <h3>
+                منوی اصلی
+              </h3>
+              <h6>
+                صفحه اصلی
+              </h6>
+              <h6>
+              محصولات
+              </h6>
+              <h6>
+                خدمات
+              </h6>
+            </ul>
+
+            <ul>
+              <h3>
+                سایر بخش ها
+              </h3>
+              <h6>
+                ثبت نام
+              <h6>
+              <h6>
+                سوالات متداول
+              </h6>
+              <h6>
+                بلاگ
+              </h6>
+            </ul>
+
+            <ul>
+              <h3>
+                درباره ما
+              </h3>
+              <h6>
+                <img src="./public/images/map-marker-alt.svg" class="blue-icon" />
+                آدرس
+              </h6>
+              <h6>
+                <img src="./public/images/envelope.svg" class="blue-icon" />
+                ایمیل
+              </h6>
+              <h6>
+                <img src="./public/images/phone.svg" class="blue-icon" />
+                شماره تماس
+              </h6>
+              
+            </ul>
+          </div>
+          <div class=" col-md-4">
+            <h6>
+              ما را در شبکه های اجتماعی دنبال کنید:
+            </h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="./public/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="./public/assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>

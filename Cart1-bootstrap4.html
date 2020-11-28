@@ -1,0 +1,417 @@
+<!doctype html>
+<html dir="rtl" lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sticky Footer Navbar Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+<link href="./public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        .body-container{
+          background-color: #E8E8E8;
+          padding-right:9%;
+          padding-left:9%;
+          padding-bottom:3%;
+          margin-top:1%;
+        }
+        .shopping-basket-title-horizontal-line{
+         border-bottom: 2px solid #DCDCDC;
+         direction: rtl; 
+         width:95%;
+         margin-right:1%;
+         float:right;
+         margin-bottom: :40px;
+        }
+      .shopping-basket-title-horizontal-line:after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #4682B4;
+        margin-bottom: -2px;
+        max-width: 110px;
+      }
+      .empty-basket-card{
+        margin-left: 3%;
+        margin-right:3%;
+        margin-top:7%;
+        margin-bottom:4% !important;
+        padding:4%;border-radius:10px;
+      }
+
+      .scroll-box{
+        width:350px;
+        height:250px;       .body-container{
+          background-color: #E8E8E8;
+          padding-right:9%;
+          padding-left:9%;
+          padding-bottom:3%;
+          margin-top:1%;
+        }
+      .dropdown-menu{
+        width:350px!important;
+        height:400px!important;
+        border-radius:5px
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./public/css/global.css" rel="stylesheet">
+    <link href="./public/css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <img src="./public/images/logo.png" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="d-flex  navbar-nav search-container">
+            <form class="form-inline mt-2 mt-md-0  w-100 ">
+              <input class="form-control search-bar" type="text" placeholder="کالای مورد نظر خود را جستجو کنید" aria-label="Search">
+                <i class="icon-search icon"></i>
+              </input>
+            </form>
+          </ul>
+
+          <ul class="d-flex  navbar-nav mr-auto">
+            <li class="nav-item mt-4 mt-md-0">
+              <button class="btn btn-outline-secondary pull-right toggle iconic-button ml-4P5">
+                <i class="icon-play icon"></i>
+                <div class="f12">ورود به حساب کاربری</div>
+              </button>
+            </li>
+            <li class="nav-item mt-4 mt-md-0 d-flex align-items-center">
+              <div class="dropdown">
+            <a type="button" data-toggle="dropdown" >
+              <img src="./public/images/shopping.svg" class="icon" />
+          </a>
+            <ul class="dropdown-menu text-right">
+                <li class="d-flex justify-content-between p-2"><a href="#">
+                   مشاهده سبد خرید
+                   <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <h6 class="text-muted">
+                  3 کالا
+                </h6>
+              </li>
+              <li>
+                <div class="scroll-box">
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+                <li class="p-4">
+                  <div class="d-flex justify-content-between">
+                    <div style="font-size:12px;opacity:0.5"> 
+                       مبلغ قالا پرداخت:
+                       <br/>
+                       ۱۲۳۴۵تومان
+                    </div>
+                    <div> 
+                        <button class="btn btn-primary btn-sm">
+                          ثبت سفارش
+                        </button>
+                    </div>
+                  </div>  
+                </li>
+            </ul>
+          </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+
+      <div class="container-fluid body-container">
+        <div class="row">
+          <div class="col-sm-12 " style="margin-top:6%;">
+            <div class="shopping-basket-title-horizontal-line"> 
+          <div class="text-right text-primary p-2">
+          <h4 class="text-primary">
+             سبد خرید 
+            
+          </h4>              
+          </div>
+          </div>
+            <div class="card text-center empty-basket-card">
+              <div >
+                <img src="Cart.png" class="h-100">
+              </div>
+              <div class="card-body ">
+                <h3 class="card-title text-center">
+                  <br/> 
+                سبد خرید شما خالی است
+                </h3>
+                <p class="card-text">
+                برای مشاهده محصولات به صفحات زیر بروید
+                </p>
+                <a href="#" > 
+                محبوب ترین ها 
+                </a>
+                <span style="height:30px; padding:2px; border-right:2px solid #DCDCDC;" > </span>
+                <a href="#" >
+                  پیشنهاد ویژه 
+                 </a>
+              </div>
+          </div>         
+          </div> 
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--     <div class="container-fluid body-container">
+        <div class="row " style="padding-right:3% !important;">
+          <div class="shopping-basket-title-horizontal-line"> 
+          <div class="shopping-basket-title">
+             سبد خرید
+          </div>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-sm-12">
+            <div class="your-shopping-basket-card">
+          <div class="card text-center" style="padding:3%;">
+              <div class="card-header">
+                <img src="Cart.png">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                سبد خرید شما خالی است
+                </h3>
+                <p class="card-text">
+                برای مشاهده محصولات به صفحات زیر بروید
+                </p>
+                <a href="#" > 
+                محبوب ترین ها 
+                </a>
+                <span style="height:30px; padding:2px; border-right:2px solid #DCDCDC;" > </span>
+                <a href="#" >
+                  پیشنهاد ویژه 
+                 </a>
+              </div>
+          </div>          
+            </div>
+          </div>
+        </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row" >
+          <div class="d-flex flex-row justify-content-around col-md-8 ">
+
+            <ul>
+              <h3>
+                منوی اصلی
+              </h3>
+              <h6>
+                صفحه اصلی
+              </h6>
+              <h6>
+              محصولات
+              </h6>
+              <h6>
+                خدمات
+              </h6>
+            </ul>
+
+            <ul>
+              <h3>
+                سایر بخش ها
+              </h3>
+              <h6>
+                ثبت نام
+              <h6>
+              <h6>
+                سوالات متداول
+              </h6>
+              <h6>
+                بلاگ
+              </h6>
+            </ul>
+
+            <ul>
+              <h3>
+                درباره ما
+              </h3>
+              <h6>
+                <img src="./public/images/map-marker-alt.svg" class="blue-icon" />
+                آدرس
+              </h6>
+              <h6>
+                <img src="./public/images/envelope.svg" class="blue-icon" />
+                ایمیل
+              </h6>
+              <h6>
+                <img src="./public/images/phone.svg" class="blue-icon" />
+                شماره تماس
+              </h6>
+              
+            </ul>
+          </div>
+          <div class=" col-md-4">
+            <h6>
+              ما را در شبکه های اجتماعی دنبال کنید:
+            </h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="./public/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="./public/assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>
