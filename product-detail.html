@@ -1,0 +1,1202 @@
+<!doctype html>
+<html dir="rtl" lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sticky Footer Navbar Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+<link href="./public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .zebra-table tr:nth-child(odd) {
+  background-color: #DCDCDC;
+  padding:0!important;
+}
+.zebra-table tr:nth-child(even) {
+  height: 1px!important;
+  padding:0 ;
+
+}
+
+
+       .shopping-basket-title-horizontal-line{
+         border-bottom: 2px solid #DCDCDC;
+         direction: rtl; 
+         width:95%;
+         margin-right:1%;
+         float:right;
+         margin-bottom: :40px;
+        }
+      .shopping-basket-title-horizontal-line:after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #4682B4;
+        margin-bottom: -2px;
+        max-width: 110px;
+      }
+      .card-text-ul li{
+        padding-top:8px;
+      }
+      .dot{ 
+        height: 17px;
+        width: 17px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 5px;
+      }
+       }
+      .topnav{
+          margin-top:3%;
+        }
+        .topnav li {
+        display: flex;
+        padding-left:10px;
+        padding-right:18px;
+        display: flex;
+        float: right;
+        white-space: nowrap;
+        font-size: 18px;
+        }
+        .nav-link{
+          text-decoration : none;
+          display: block;
+        color: #787878;
+        }
+        .nav-link:hover {
+        color: black;
+        text-decoration:none;
+        }
+      .topnav-vertical-line{
+          height:30px;
+          padding:5px;
+          border-left:2px solid #DCDCDC;
+        }
+       .dropdown-menu {
+          width: !important;
+          height: 100px !important;
+      }
+      .cyan-blue{
+        color:#015699 ;
+      }
+      .bordeless-table {
+      border-bottom:0px !important;
+      }
+      .borderless-table th, .borderless-table td {
+      border: 1px !important;
+      }
+
+      .header-login-box-vertical-line{
+        border-left:2px solid #DCDCDC;
+        padding:10px;
+        margin-left:5px;
+      }
+      .scroll-box{
+        width:350px;
+        height:250px;
+        border-bottom :1px solid #DCDCDC;border-top:1px solid #DCDCDC;
+        overflow:scroll;
+        overflow-x: hidden;
+        border-radius:5px
+      }
+      .dropdown-menu{
+        width:auto!important;
+        height:auto!important;
+        border-radius:5px;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .footer-partner-logo{
+        width:60px;
+        height:70px
+      }
+      .footer-table>tbody>tr>td,  .footer-table>tfoot>tr>td, .footer-table>tfoot>tr>th, .footer-table>thead>tr>th
+      {
+        padding:4px; 
+      }
+      .shake:hover {
+          animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+          transform: translate3d(0, 0, 0);
+          perspective: 1000px;
+        }
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+        
+        30%, 50%, 70% {
+          transform: translate3d(-2px, 0, 0);
+        }
+        40%, 60% {
+          transform: translate3d(2px, 0, 0);
+      }
+    }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      @media (max-width:768px){
+        .login-button-text ,  .icon-search, .search-bar{
+          display: none !important;
+        }
+        .search-button{
+          display: block!important;
+
+        }
+        .footer-table{
+          width:100%!important;
+        }
+          .nav-1{
+    display: none!important;
+  }
+
+
+       .suggestion-card-title-horizontal-line{
+          border-bottom:  solid #DCDCDC;
+          direction: ltr; 
+          width:100%;
+          float:right;
+          margin-bottom: :20px
+        }
+      
+      .suggestion-card-title-horizontal-line:after{
+        content: '';
+        display: block;
+        border-bottom: 2px solid #4682B4;
+        margin-bottom: -2px;
+        max-width: 50%;
+      }
+
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./public/css/global.css" rel="stylesheet">
+    <link href="./public/css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <!-- <body class="d-flex flex-column h-100"> -->
+      <!-- Fixed navbar -->
+
+
+      <header>
+        <div class="container-fluid" style="padding-right:9%;padding-left:9%;">
+          <div class="d-flex justify-content-between mt-2">
+                <div >
+              <img class="logo-img" src="./public/images/logo.png" />
+             
+               </div>
+            <div class="flex-fill px-4">
+              
+              <form class="form-inline mt-2 ">
+                <input class="form-control search-bar" type="text" placeholder="کالای مورد نظر خود را جستجو کنید" aria-label="Search">
+                 <button type="submit" class=" btn h-50 py-1 search-button bg-white mx-4 " style="display:none;border:2px solid #DCDCDC;margin-top: 7px;"><i class="fa fa-search"></i></button>
+                  <i class="icon-search icon"></i>
+                </input>
+              </form>
+            </div>
+            <div class="d-inline-flex mt-3 ml-5 pl-4" >
+              <button class="btn h-50 p-0 px-2 py-1" style="border:2px solid #DCDCDC">
+                <div class="d-inline-flex p-0" >
+                  <i class="icon-play icon"></i>
+                    <h6 class="login-button-text pr-2 text-nowrap">
+                      <small>
+                        ورود به حساب کاربری
+                      </small>
+                    </h6>
+                  </div>
+                </button>
+            
+              <div class="dropdown mt-1">
+            <a type="button" data-toggle="dropdown" >
+              <span class="header-login-box-vertical-line">
+                    </span>
+              <img src="./public/images/shopping.svg" class="icon ml-3" />
+          </a>
+            <ul class="dropdown-menu text-right">
+                <li class="d-flex justify-content-between p-2"><a href="#">
+                   مشاهده سبد خرید
+                   <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <h6 class="text-muted">
+                  3 کالا
+                </h6>
+              </li>
+              <li>
+                <div class="scroll-box">
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+                <li class="p-4">
+                  <div class="d-flex justify-content-between">
+                    <div style="font-size:12px;opacity:0.5"> 
+                       مبلغ قالا پرداخت:
+                       <br/>
+                       ۱۲۳۴۵تومان
+                    </div>
+                    <div> 
+                        <button class="btn btn-primary btn-sm">
+                          ثبت سفارش
+                        </button>
+                    </div>
+                  </div>  
+                </li>
+            </ul>
+          </div>
+            </div>
+          </div>
+        </div>
+      </header>
+            <div class="row"  style="padding-right:8%;padding-left:8%;">
+<nav  role="navigation" class="navbar navbar-toggleable-md navbar-expand-md topnav">
+  <button class="navbar-toggler px-4" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <i class="fa fa-bars fa-lg"> 
+                  </i>
+                دسته بندی کالاها
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar" style="width:auto">
+      <li class="nav-item nav-1" style="display: block">
+           <div class="dropdown">
+            <a class="topnav-items nav-link px-0" type="button" data-toggle="dropdown" >
+                  <i class="fa fa-bars fa-lg"> 
+                  </i>
+              <span class="topnav-vertical-line"> 
+                دسته بندی کالاها
+            </span> 
+          </a>
+            <ul class="dropdown-menu dropdown-menu-right text-right" >
+                <li ><a href="#" class="nav-link">
+                  <i class="fa fa-desktop">
+                  کامپیوتر
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </i>  
+                </a></li>
+                <li ><a href="#" class="nav-link">
+                  <i class="fa fa-headphones"> 
+                  لوازم جانبی موبایل
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </i>
+                </a></li>
+                <li><a href="#" class="nav-link">
+                    <i class="fa fa-gamepad" aria-hidden="true">
+                  ذخیره سازی
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </i>
+                </a></li>
+                <li><a href="#" class="nav-link">
+                   <i class="fa fa-gamepad" aria-hidden="true">
+                  کنسول بازی
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                   </i>
+                </a></li>
+                <li><a href="#" class="nav-link">
+                  <i class="fa fa-television"> 
+                  صوتی و تصویری
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </i>
+                </a></li><li><a href="#" class="nav-link">
+                  <i class="fa fa-apple"> 
+                  محصولات اپل
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </i>
+                    </a></li>
+                 <li><a href="#" class="nav-link">
+                  <i class="fa fa-plus-circle"> 
+                  
+                  سایر محصولات
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </i>
+                </a></li>
+            </ul>
+          </div>
+      </li>
+      <li class="nav-item">
+         <a href="#" class="nav-link ">
+              <i class="fa fa-desktop"> 
+                کامپیوتر
+              </i>
+            </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link ">
+                  <i class="fa fa-headphones"> 
+                  لوازم جانبی موبایل
+                  </i>
+                </a>
+      </li>    
+      <li class="nav-item  "  ><a href="#" class="nav-link ">
+                    <i class="fa fa-gamepad" aria-hidden="true">
+                  ذخیره سازی
+                    </i>
+                </a></li>
+                <li class="nav-item " ><a href="#" class="nav-link">
+                   <i class="fa fa-gamepad" aria-hidden="true">
+                  کنسول بازی
+                   </i>
+                </a></li>
+                <li  class="nav-item " ><a href="#" class="nav-link">
+                  <i class="fa fa-television"> 
+                  صوتی و تصویری
+                  </i>
+                </a></li><li class="nav-item nav-4" ><a href="#" class="nav-link">
+                  <i class="fa fa-apple"> 
+                  محصولات اپل
+                  </i>
+                    </a></li>
+                 <li class="nav-item " ><a href="#" class="nav-link">
+                  <i class="fa fa-plus-circle"> 
+                  
+                  سایر محصولات
+                  </i>
+                </a></li>
+    </ul>
+  </div>  
+</nav>
+
+
+      </div>
+       
+
+
+    <!-- Begin page content -->
+   <div clsas="container" style="padding-right:3%;padding-left:3%;">
+     <div class="row d-flex justify-content-center">
+        <div class="col-sm-10 text-center">
+          <div class="card shadow rounded bg-white mb-5">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <div class="row d-flex justify-content-center" style="height:auto;width:auto">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81NRZ%2BhIOfL._AC_SL1500_.jpg" class="card-img p-5" style="max-height:100%;max-width:80%;" >
+                </div>
+                <div class="row d-flex justify-content-center">
+                   <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                  
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row row d-flex justify-content-center">
+                          <div class="col-sm-4">
+                             <div class="card p-1 " style="width:70px; height:60px" >
+                              <img class="card-img-top" src="https://www.xstra.eu/resize/ahd710p-1tu31-crd-2_1307512572271.jpg/0/1100/True/1tb-external-hard-disk-usb-32-adata-hd710-pro-red-2.jpg"  style="width:100%; height:100%;">
+                              </div>
+                            </div>
+                            <div class="col-sm-4 px-0">
+                            <div class="card p-1" style="width:70px; height:60px">
+                               <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="card p-1" style="width:70px; height:60px">
+                                <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"style="width:100%; height:100%;">
+                              </div>
+                            </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                         <div class="row">
+                          <div class="col-sm-4">
+                             <div class="card p-1 " style="width:70px; height:60px" >
+                              <img class="card-img-top" src="https://www.xstra.eu/resize/ahd710p-1tu31-crd-2_1307512572271.jpg/0/1100/True/1tb-external-hard-disk-usb-32-adata-hd710-pro-red-2.jpg"  style="width:100%; height:100%;">
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div class="card p-1" style="width:70px; height:60px">
+                               <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="card p-1" style="width:70px; height:60px">
+                                <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"style="width:100%; height:100%;">
+                              </div>
+                            </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="ny.jpg" alt="New York" width="1100" height="500">
+                      </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev " href="#demo" data-slide="prev">
+                      <div class="text-primary">
+                       >
+                        
+                      </div>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                       <div class="text-primary">
+                       <
+                        
+                      </div>
+                    </a>
+                  </div>
+
+
+
+                   
+                  </div>
+                </div>  
+              <div class="col-md-5">
+                <div class="card-body text-right  ">
+                  <h5 class="card-title">
+                    هارد اکسترنال دیتا مدل HD710 Pro ظرفیت ۱ ترابایت
+                  </h5>
+                  <div class="row">
+                  <div class="col-sm-5">
+                    <p class="card-text mt-3">
+                    برند:
+                    <a href="#"> ای دیتا</a>
+                  </p>
+                  <p>
+                    دسته بندی : 
+                    <a href="#"> هارد اکسترنال </a>
+                  </p>
+                  <h6 class="pb-1">
+                    <strong>
+                    ویژگی محصول:
+                    </strong>
+                  </h6>
+                    <li class="pb-2">
+                     ظرفیت :‌۱ ترابایت
+                    </li>
+                    <li class="pb-2">
+                      نوع حافظه: قابل حمل 
+                    </li>
+                    <li class="pb-2">
+                      نوع اتصلب : با سیم
+                    </li>
+                    <li class="pb-2">
+                      نوع رابط: USB3.1
+                    </li>
+                    <li class="pb-2">
+                      مقاوم در برابر آب : بله
+                    </li>
+                    <li class="pb-2">
+                      مقاوم در برابر ضربه : بله 
+                    </li>
+                  </div>
+                <div class="col-sm-5">
+                  <p class="card-text">
+                    <div> 
+                   انتخاب رنگ:
+
+                    </div>
+                   <div class="mt-2">
+                     <span class="dot" style="background-color:yellow">
+                   </span>
+                    <span class="dot" style="background-color:black">
+                   </span> <span class="dot" style="background-color:#B22222">
+                   </span> <span class="dot" style="background-color:red">
+                   </span>
+                   </div>
+                   </p>
+                  <div>
+                    <h5 class="text-primary">
+                      <strong>
+                      قیمت : ۲۱۵۶۰۰۰ تومان
+                        
+                      </strong>
+                    </h5>
+                    <button class="btn mt-4 btn-primary text-white">
+                      <i class="fa fa-plus-circle"></i>
+                      افزودن به سبد خرید 
+                    </button>
+                  </div>
+                </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-4 ">
+                <div class="row text-center m-3 d-flex justify-content-center">
+                 <div class="col-sm-12">
+                    <div class="card shadow rounded">
+                      <table class="table p-3 borderless-table text-right text-nowrap">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <h6>
+                                سرعت انتقال اطلاعات
+                              </h6>
+                            </td>
+                            <td style="width:200px;" class="py-4 pr-0">
+                                <div class="progress" style="height:5px;">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                  </div>
+                                </div>
+                            </td>
+                            <td>
+                              خوب
+                            </td>
+
+                          </tr>
+                          <tr>
+                            <td> کیفیت ساخت</td>
+                            <td style="width:200px;" class="py-4 pr-0">
+                                <div class="progress" style="height:5px;">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                  </div>
+                                </div>
+                            </td>
+                            <td>
+                              خوب
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> امکانات و قابلیت ها</td>
+                            <td style="width:200px;" class="py-4 pr-0">
+                                <div class="progress" style="height:5px;">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                  </div>
+                                </div>
+                            </td>
+                            <td>
+                              خوب
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> طراحی و ظاهر </td>
+                            <td style="width:200px;" class="py-4 pr-0">
+                                <div class="progress" style="height:5px;">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                  </div>
+                                </div>
+                            </td>
+                            <td>
+                              خوب
+                            </td>
+                          </tr>
+                          <tr>
+                            <td> ارزش خرید در برابر قیمت </td>
+                            <td style="width:200px;" class="py-4 pr-0">
+                                <div class="progress" style="height:5px;">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                  </div>
+                                </div>
+                            </td>
+                            <td>
+                              عالی
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                 </div>
+                </div>
+                <div class="row text-center m-3 d-flex justify-content-center">
+                 <div class="col-sm-11">
+                    <div class="card shadow rounded text-right p-3">
+                     <h5 class="cyan-blue">
+                       نقاط قوت
+                     </h5>
+                     <ul>
+                       <li>
+                         سنسور Gshock
+                       </li>
+                       <li>
+                         ضد ضربه - ضد آب - ضد گرد و غبار
+                       </li>
+                       <li>
+                          پورت usb-3.0
+                       </li>
+                     </ul>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+   </div>
+      <div clsas="container" style="padding-right:3%;padding-left:3%;">
+     <div class="row d-flex justify-content-center">
+        <div class="col-sm-10 text-center">
+          <div class="card shadow bg-white" >
+  <div class="card-body">
+    <p class="card-text" style="line-height:40px">
+      حافظهٔ فلش یا فلش مموری (به انگلیسی: Flash memory)، حافظهٔ غیر فرّار ذخیره‌سازی رایانه‌ای است که می‌توان آن را به صورت الکتریکی پاک و دوباره برنامه‌ریزی کرد. این فناوری عمدتاً در کارت‌های حافظه و یواس‌بی استفاده می‌شود و برای ذخیره‌سازی عمومی و انتقال داده‌ها بین رایانه‌ها و دیگر محصولات دیجیتال به کار می‌رود. این نوع خاصی از EEPROM (حافظهٔ فقط خواندنی پاک‌شدنی و قابل برنامه‌ریزی به صورت الکتریکی) است که در قطعات بزرگ، پاک و برنامه‌ریزی شده‌است. از آنجا که حافظهٔ فلش غیر فرّار است، هیچ نیرویی برای نگه داشتن اطلاعات درون قطعه مورد نیاز نیست. علاوه بر این، این حافظه به ارائه گذاشتن سریع اطلاعات در هر دسترسی (اگر چه به اندازهٔ حافظه فرّار دینامیک دسترسی تصادفی (DRAM)، که برای حافظه اصلی در رایانه‌ها به کار می‌رود سریع نیست) ولی مقاوم‌تر از دیسک سخت (Hard disk) در برابر شوک حرکتی می‌باشد.
+
+دو نوع حافظهٔ فلش وجود دارد که بر حسب منطق‌های NAND , NOR نام‌گذاری شده‌اند سلول‌های مستقل حافظهٔ فلش مشخصات درونی مشابهی با دروازهٔ مربوط را نشان می‌دهند. در حالی که EPROMها باید قبل از نوشته شدن به‌طور کامل پاک شوند، فلش‌های نوع NANDمی‌توانند هم‌زمان در بلوک‌هایی که معمولاً از کّل دستگاه کوچکترند خوانده و نوشته شوند. فلش‌های NOR به یک کلمهٔ ماشینی تنها (بایت) اجازه می‌دهند بر روی یک محل پاک شده بدون وابستگی نوشته یا خواند شوند. نوع NAND به صورت عمده در کارت‌های حفظ فلش‌های یواس‌بی و درایوهای حالت جامد و محصولات مشابه برای ذخیره معمولی و انتقال داده استفاده می‌شود. فلش‌های NAND, NOR معمولاً برای ذخیره پیکر بندی داده‌ها در بسیاری از محصولات دیجیتالی استفاده می‌شوند مسئولیتی که در گذشته به وسیلهٔ EPROMها یا حافظهٔ استاتیک باتری دار ممکن می‌شد. یکی از معایب حافظهٔ فلش تعداد محدود چرخه‌های خواندن یا نوشتن در یک بلوک خاص است. فلش‌های NOR و NAND نام خود را از روابط داخلی بین سلول‌های حافظه‌شان می‌گیرند. مشابه گیت نند، در فلش‌های نند هم گیت‌ها در سری‌هایی به هم متصل هستند. در یک گیت NOR ترانزیستورها به‌طور موازی به هم متصل هستند و مانند آن در فلش NOR سلول‌ها به‌طور موازی به خطوط بیت متصل هستند و به همین دلیل است که سلول‌ها می‌توانند جداگانه و مستقل، خوانده و برنامه‌نویسی شوند.[۱] در مقایسه با فلش‌های NOR جایگزین کردن یک ترانزیستور با گروه‌های سری لینک شده یک سطح آدرس دهی اضافی به آن‌ها می‌افزاید. در حالی که فلش‌های NOR می‌توانند حافظه را با صفحه و سپس کلمه آدرس دهی کنند. فلش‌های NAND می‌توانند آن را با صفحه، کلمه و بیت آدرس دهی کنند.
+    </p>
+  </div>
+</div>
+        </div>
+     </div>
+   </div>
+         <div clsas="container" style="padding-right:3%;padding-left:3%;">
+     <div class="row d-flex justify-content-center">
+        <div class="col-sm-10 text-center">
+          <div class="card shadow bg-white mt-3" >
+  <div class="card-body text-right">
+    <p class="card-text" style="line-height:40px">
+      <h5 >
+      مشخصات فنی
+      </h5>
+      <div class="text-muted">
+        ADATA H0710 External Hard Drive - ITB
+      </div>
+    </p>
+    <table class="table zebra-table">
+    <tbody>
+      <tr>
+        <td>ابعاد</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <h6>
+            مششخصات فنی
+          </h6>
+        </td>
+        <td></td>
+      </tr>
+       <tr>
+        <td>ظرفیت</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>نوع حافظه </td>
+        <td></td>
+      </tr>
+       <tr>
+        <td>نوع اتصال </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>وزن رابط </td>
+        <td></td>
+      </tr>
+            <tr>
+        <td>سایز هد </td>
+        <td></td>
+      </tr>
+       <tr>
+        <td>سرعت انتقال داده ها </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>مقاوم در برابر آب </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>مقاوم در برابر ضربه</td>
+        <td></td>
+      </tr>
+            <tr>
+        <td>مقاوم در برابر شوک </td>
+        <td></td>
+      </tr>
+       <tr>
+        <td>مقاوم در برابر لغزش </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>مقاوم در برابر خش</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>مقاوم در برابر گرد و غبار </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>باتری</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>نشانگر LED </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>منبع تغذیه</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>سازگاری با سیستم عامل های </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>اقلام همراه هارد دیسک</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>سایر قابلیت ها </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+        </div>
+     </div>
+   </div>
+
+
+      <div clsas="container " style="padding-right:3%;padding-left:3%;">
+     <div class="row d-flex justify-content-center mt-5">
+        <div class="col-sm-10 text-center">
+          <div class="card shadow bg-white" >
+  <div class="card-body">
+    <p class="text-right text-primary pr-3"> محصولات مرتبط
+      <div class="shopping-basket-title-horizontal-line"> 
+          <div class="text-right text-primary p-2">           
+          </div>
+          </div>
+    </p>
+      
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+            <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+            <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card border-0">
+              <img class="card-img-top" src="https://swisscomvbc.scene7.com/is/image/Swisscom/scs-11043619-de-000?wid=700&hei=700&fmt=png-alpha"  style="width:100%; height:100%;">
+              <div class="card-body">
+                <p class="card-text">هارد دیسک اکسترنال وسترن دیجیتال ای دیتا  ظرفیت یک ترابایت</p>
+                <p class="text-left">
+                  <strong>
+                  12345 تومان
+                    
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon bg-primary"  ></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon bg-primary "></span>
+  </a>
+</div>
+
+    </div>
+  </div>
+        </div>
+     </div>
+ </div>
+
+
+<!-- footer -->
+
+ <!--  <div class="container">
+      <div class="row pt-4">
+                    <div class="col-md-9">
+                <table class="table footer-table text-right borderless-table text-nowrap" style="width:85%;">
+                  <thead class="cyan-blue" >
+                    <tr >
+                        <th>
+                          <h4>
+                            <strong>
+                          منوی اصلی                   
+                            </strong>
+                          </h4>
+                        </th>
+                        <th>
+                          <h4>
+                            <strong>
+                              سایر بخش ها
+                            </strong>
+                        </h4>
+                        </th>
+                        <th>
+                          <h4>
+                            <strong>
+                            درباره ما             
+                            </strong>
+                          </h4>
+                        </th>
+                    </tr>
+                  </thead>
+                  <tbody  >
+                    <tr>
+                      <td>صفحه اصلی</td>
+                      <td>ثبت نام</td>
+                      <td>
+                              <img src="https://img.icons8.com/material-outlined/24/000000/marker.png"/>
+
+                      آدرس</td>
+                        
+                    </tr>
+                    <tr>
+                      <td>محصولات</td>
+                      <td>سوالات متداول </td>
+                      <td>
+                        <img src="https://img.icons8.com/fluent-systems-regular/24/000000/filled-message.png"/>
+                      ایمیل</td>
+                    </tr>
+                      <tr>
+                        <td>خدمات</td>
+                       <td>بلاگ</td>
+                        <td>
+                          <img  style="transform: rotate(-105deg);" src="https://img.icons8.com/fluent-systems-regular/24/000000/phone.png"/>
+                        شماره تماس</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="col-md-3" >
+              <div>
+                  <table class="table borderless-table text-center ">
+                      <thead>
+                      <tr>
+                          <td colspan="3" class='text-nowrap'>
+                            <h5>
+                              <small>
+                              ما را در شبکه های اجتماعی دنبال کنید
+                                
+                              </small>
+                            </h5>
+                          </td>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                          <td >
+                          <img class="shake" src="https://img.icons8.com/fluent-systems-filled/24/000000/whatsapp.png"/>
+
+                            </td>
+                          <td>
+                            <img class="shake" src="https://img.icons8.com/material/24/000000/instagram-new--v1.png"/>
+                          </td>
+                        <td>
+                          <img  class="shake" src="https://img.icons8.com/ios-glyphs/30/000000/twitter-circled--v2.png"/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <img class="footer-partner-logo" src="https://ecunion.ir/bundles/pouyasoft/home/img/logo.png">
+                          </td>
+                          <td>
+                            <img class="footer-partner-logo" src="https://ecunion.ir/bundles/pouyasoft/home/img/logo.png">
+                          </td>
+                          <td>
+                              <img class="footer-partner-logo" src="https://ecunion.ir/bundles/pouyasoft/home/img/logo.png">
+                          </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+ -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="./public/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="./public/assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>
