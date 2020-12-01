@@ -1,0 +1,411 @@
+<!doctype html>
+<html dir="rtl" lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sticky Footer Navbar Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+<link href="./public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .topnav-vertical-line{
+          height:30px;
+          padding:5px;
+          border-left:2px solid #DCDCDC;
+        }
+      .cyan-blue{
+        color:#015699 ;
+      }
+      .bordeless-table {
+      border-bottom:0px !important;
+      }
+      .borderless-table th, .borderless-table td {
+      border: 1px !important;
+      }
+
+      .header-login-box-vertical-line{
+        border-left:2px solid #DCDCDC;
+        padding:10px;
+        margin-left:5px;
+      }
+      .scroll-box{
+        width:350px;
+        height:250px;
+        border-bottom :1px solid #DCDCDC;border-top:1px solid #DCDCDC;
+        overflow:scroll;
+        overflow-x: hidden;
+        border-radius:5px
+      }
+      .dropdown-menu{
+        width:350px!important;
+        height:400px!important;
+        border-radius:5px
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .footer-partner-logo{
+        width:60px;
+        height:70px
+      }
+      .footer-table>tbody>tr>td,  .footer-table>tfoot>tr>td, .footer-table>tfoot>tr>th, .footer-table>thead>tr>th
+      {
+        padding:4px; 
+      }
+      .shake:hover {
+          animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+          transform: translate3d(0, 0, 0);
+          perspective: 1000px;
+        }
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+        
+        30%, 50%, 70% {
+          transform: translate3d(-2px, 0, 0);
+        }
+        40%, 60% {
+          transform: translate3d(2px, 0, 0);
+      }
+    }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      @media (max-width:768px){
+        .login-button-text ,  .icon-search, .search-bar{
+          display: none !important;
+        }
+        .search-button{
+          display: block!important;
+
+        }
+        .footer-table{
+          width:100%!important;
+        }
+    }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./public/css/global.css" rel="stylesheet">
+    <link href="./public/css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <!-- <body class="d-flex flex-column h-100"> -->
+      <!-- Fixed navbar -->
+
+
+      <header>
+        <div class="container-fluid" style="padding-right:9%;padding-left:9%;">
+          <div class="d-flex justify-content-between mt-2">
+                <div >
+              <img class="logo-img" src="./public/images/logo.png" />
+             
+               </div>
+            <div class="flex-fill px-4">
+              
+              <form class="form-inline mt-2 ">
+                <input class="form-control search-bar" type="text" placeholder="کالای مورد نظر خود را جستجو کنید" aria-label="Search">
+                 <button type="submit" class=" btn h-50 py-1 search-button bg-white" style="display:none;border:2px solid #DCDCDC;margin-top: 7px;"><i class="fa fa-search"></i></button>
+                  <i class="icon-search icon"></i>
+                </input>
+              </form>
+            </div>
+            <div class="d-inline-flex mt-3 ml-5 pl-4" >
+              <button class="btn h-50 p-0 px-2 py-1" style="border:2px solid #DCDCDC">
+                <div class="d-inline-flex p-0" >
+                  <i class="icon-play icon"></i>
+                    <h6 class="login-button-text pr-2 text-nowrap">
+                      <small>
+                        ورود به حساب کاربری
+                      </small>
+                    </h6>
+                  </div>
+                </button>
+            
+              <div class="dropdown mt-1">
+            <a type="button" data-toggle="dropdown" >
+              <span class="header-login-box-vertical-line">
+                    </span>
+              <img src="./public/images/shopping.svg" class="icon ml-3" />
+          </a>
+            <ul class="dropdown-menu text-right">
+                <li class="d-flex justify-content-between p-2"><a href="#">
+                   مشاهده سبد خرید
+                   <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <h6 class="text-muted">
+                  3 کالا
+                </h6>
+              </li>
+              <li>
+                <div class="scroll-box">
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="row no-gutters">
+                      <div class="col-md-5 px-1 py-2" >
+                        <img class="w-100 h-100" src="https://scx2.b-cdn.net/gfx/news/hires/2019/googleschall.jpg">      
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row">
+                          <div class="card-body text-right"> 
+                            <h5 class="card-title">
+                              <small>
+                              پایه شارژ بازی ایکس باکس 
+                                
+                              </small>
+                            </h5>
+                            <h5 >
+                              <small>
+                                DOBE 
+                              مدل 
+                              TYX - 532S
+                              </small>
+                            </h5>  
+                            <div class="d-flex justify-content-between pt-3">
+                              <h6 class="pt-2"> 
+                                <small>
+                                  ۱عدد
+                                </small>
+                              </h6>
+                              <div class="pl-3"> 
+                                <i class="fa fa-trash text-muted"> </i>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+                <li class="p-4">
+                  <div class="d-flex justify-content-between">
+                    <div style="font-size:12px;opacity:0.5"> 
+                       مبلغ قالا پرداخت:
+                       <br/>
+                       ۱۲۳۴۵تومان
+                    </div>
+                    <div> 
+                        <button class="btn btn-primary btn-sm">
+                          ثبت سفارش
+                        </button>
+                    </div>
+                  </div>  
+                </li>
+            </ul>
+          </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div>
+       
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+      <div class="container mb-5 pb-5">
+        <h1 class="mt-5">Sticky footer with fixed navbar</h1>
+        <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>main &gt; .container</code>.</p>
+        <p>Back to <a href="../examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+      </div>
+    </main>
+
+<!-- footer -->
+
+<div class="footer">
+  <div class="container">
+      <div class="row pt-4">
+                    <div class="col-md-9">
+                <table class="table footer-table text-right borderless-table text-nowrap" style="width:85%;">
+                  <thead class="cyan-blue" >
+                    <tr >
+                        <th>
+                          <h4>
+                            <strong>
+                          منوی اصلی                   
+                            </strong>
+                          </h4>
+                        </th>
+                        <th>
+                          <h4>
+                            <strong>
+                              سایر بخش ها
+                            </strong>
+                        </h4>
+                        </th>
+                        <th>
+                          <h4>
+                            <strong>
+                            درباره ما             
+                            </strong>
+                          </h4>
+                        </th>
+                    </tr>
+                  </thead>
+                  <tbody  >
+                    <tr>
+                      <td>صفحه اصلی</td>
+                      <td>ثبت نام</td>
+                      <td>
+                              <img src="https://img.icons8.com/material-outlined/24/000000/marker.png"/>
+
+                      آدرس</td>
+                        
+                    </tr>
+                    <tr>
+                      <td>محصولات</td>
+                      <td>سوالات متداول </td>
+                      <td>
+                        <img src="https://img.icons8.com/fluent-systems-regular/24/000000/filled-message.png"/>
+                      ایمیل</td>
+                    </tr>
+                      <tr>
+                        <td>خدمات</td>
+                       <td>بلاگ</td>
+                        <td>
+                          <img  style="transform: rotate(-105deg);" src="https://img.icons8.com/fluent-systems-regular/24/000000/phone.png"/>
+                        شماره تماس</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="col-md-3" >
+              <div>
+                  <table class="table borderless-table text-center ">
+                      <thead>
+                      <tr>
+                          <td colspan="3" class='text-nowrap'>
+                            <h5>
+                              <small>
+                              ما را در شبکه های اجتماعی دنبال کنید
+                                
+                              </small>
+                            </h5>
+                          </td>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                          <td >
+                          <img class="shake" src="https://img.icons8.com/fluent-systems-filled/24/000000/whatsapp.png"/>
+
+                            </td>
+                          <td>
+                            <img class="shake" src="https://img.icons8.com/material/24/000000/instagram-new--v1.png"/>
+                          </td>
+                        <td>
+                          <img  class="shake" src="https://img.icons8.com/ios-glyphs/30/000000/twitter-circled--v2.png"/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <img class="footer-partner-logo" src="https://ecunion.ir/bundles/pouyasoft/home/img/logo.png">
+                          </td>
+                          <td>
+                            <img class="footer-partner-logo" src="https://ecunion.ir/bundles/pouyasoft/home/img/logo.png">
+                          </td>
+                          <td>
+                              <img class="footer-partner-logo" src="https://ecunion.ir/bundles/pouyasoft/home/img/logo.png">
+                          </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="./public/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="./public/assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>
